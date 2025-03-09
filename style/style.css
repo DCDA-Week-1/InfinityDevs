@@ -20,8 +20,12 @@ body {
   
 /* NAVIGATION BAR STYLE */
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 15vh;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +63,29 @@ nav {
     color: var(--text-primary);
     transition: ease-in-out;
 }
+
+/* PERCOBAAN */
+#home {
+    width: 100%;
+    height: 100vh;
+}
+#aboutus {
+    width: 100%;
+    height: 100vh;
+}
+#ourteam {
+    width: 100%;
+    height: 100vh;
+}
+#teacher {
+    width: 100%;
+    height: 100vh;
+}
+#information {
+    width: 100%;
+    height: 100vh;
+}
+/* PERCOBAAN END */
 
 /* FOOTER STYLE*/
 .footer {
