@@ -19,27 +19,15 @@ $(document).ready(function () {
 
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(event) {
-        event.preventDefault(); // Mencegah default jump link
-        const targetId = this.getAttribute('href').substring(1); // Ambil id target
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
 
         if (targetSection) {
             window.scrollTo({
-                top: targetSection.offsetTop - 50, // Scroll ke posisi elemen
-                behavior: 'smooth' // Efek smooth scrolling
+                top: targetSection.offsetTop - 50,
+                behavior: 'smooth'
             });
         }
     });
 });
-
-
-// check lebar
-// $(window).resize(function () {
-//     var width = $(window).width();
-//     if(width > 599) {
-//         menu.css("display", "block");
-//     } else {
-//         menu.css("display", "none");
-//     }
-//     klikMenu();
-// });

@@ -8,31 +8,78 @@
 #teacher {
     width: 100%;
     height: 100vh;
-HEAD
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navbar {
-    font-family: "Merriweather", serif;
+
+/* TEACHER STYLE */
+.box-content {
+    background-color: var(--secondary);
+    width: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.header-teacher {
     display: flex;
     gap: 20px;
-    background-color:blue;
+    background-color: var(--primary);
     padding: 5px 100px;
-    color: black;
-    border-radius: 10px;
+    color: var(--secondary);
 }
-.img {
-   float: left;
-   margin-right: 15px;
-   width: 350px;
-   height: 550;
-   border-radius: 20px;
+.content-teacher {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.box {
-    background-color: white; /* Warna latar belakang */
-    border-radius: 10px; /* Membuat sudut membulat */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan */
-    padding: 20px; /* Ruang dalam */
-    max-width: 1000px; /* Lebar maksimum */
-    margin: 50px auto; /* Tengahkan kotak */
-    border: 1px solid #ddd; /* Garis pinggir */
-7fc4e7b (Perubahan)
+.paragraph-content-teacher {
+    padding: 14px;
+}
+.img-teacher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-teacher img {
+    border-radius: 30px;
+    width: 480px;
+    padding: 14px;
+}
+
+@media screen and (max-width: 1366px) {
+    #teacher {
+        font-size: 100%;
+        height: 200vh;
+        background: linear-gradient(45deg, #FEFBEC, #303CA2);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #teacher {
+        font-size: 90%;
+    }
+    .img-teacher img {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #teacher {
+        font-size: 80%;
+    }
+    .img-teacher img {
+        width: 300px;
+    }
+
 }

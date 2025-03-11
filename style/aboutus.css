@@ -1,7 +1,3 @@
-HEAD
-
-
-7fc4e7b (Perubahan)
 :root {
     --primary: #303CA2;
     --secondary: #FEFBEC;
@@ -12,61 +8,93 @@ HEAD
 #aboutus {
     width: 100%;
     height: 100vh;
-HEAD
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: black;
-    line-height: 1.5;
+/* ABOUT US STYLE */
+.left-aboutus {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-p {
-    text-align: justify;
-    margin-bottom: 15px;
+.paragraph-left-aboutus {
+    font-size: 25px;
+    padding: 24px;
+    color: #444;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-strong {
-    font-weight: bold;
-}
-
-.blue-text {
-    color: blue;
-    text-decoration: none;
-}
-
-.blue-text:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    display: inline-flex;
-    gap: 10px;
-    padding: 60px 150px;
-    height: 200vh;
-}
-.text-heading,
-h1{
-    font-size: 38px;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-.photo {
-    height: 450px;
-    width: 450px;
-    border-radius: 30px;
+.paragraph-left-aboutus span {
+    color: var(--decoration);
 }
 .btn {
-    font-family: "Merriweather", serif;
-    background-color:#303CA2;
-    font-size: 17px;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 10px 40px;
+    width: 280px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-/*efek saat menekan tombol*/
-button:hover {
-    background-color: rosybrown;
+ .btn button {
+    background-color: var(--primary);
+    width: 100px;
+    height: 50px;
+    color: var(--secondary);
+    border-radius: 4px;
+    font-size: 18px;
+ }
+ .video-link {
+    background-color: var(--decoration);
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .video-link a {
+    text-decoration: none;
+    color: var(--secondary);
+ }
+ .right-aboutus {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .right-aboutus img {
+    width: 700px;
+    border-radius: 8px;
+    box-shadow: -2px 10px 21px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 10px 21px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 10px 21px -7px rgba(0,0,0,0.75);
+ }
+
+ @media screen and (max-width: 1366px) {
+    .paragraph-left-aboutus {
+        font-size: 100%;
+        position: relative;
+    }
+    .right-aboutus {
+        display: none;
+    }
 }
-7fc4e7b (Perubahan)
+
+@media screen and (max-width: 768px) {
+    .paragraph-left-aboutus {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .paragraph-left-aboutus {
+        font-size: 85%;
+    }
+}
+
+
