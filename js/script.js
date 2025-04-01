@@ -10,12 +10,12 @@ function klikMenu() {
         menu.toggle();
     });
 }
-/*$(document).ready(function () {
+$(document).ready(function () {
     var width = $(window).width();
     if (width < 600) {
         klikMenu();
     }
-});*/
+});
 
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(event) {
